@@ -11,11 +11,13 @@ const cors = require('cors')
 app.use(cors());
 app.use(express.json())
 
+// mysql://b8008c6e1c1f64:9ae9d678@us-cdbr-east-06.cleardb.net/heroku_ac3f8ac31cd9322?reconnect=true
+
 const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '086413814',
-    database: 'r_mes',
+    host: 'us-cdbr-east-06.cleardb.net',
+    user: 'b8008c6e1c1f64',
+    password: '9ae9d678',
+    database: 'heroku_ac3f8ac31cd9322',
     port: 3306
 })
 
