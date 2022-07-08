@@ -223,9 +223,10 @@ app.put('/updateTags', (req, res) => {
         });
 })
 
-app.listen(7520, () => {
-    console.log("runing on port 3001");
+app.listen(process.env.PORT || PORT, () => {
+    console.log(`runing on port 3001 ${PORT}`);
 })
+
 
 
 
