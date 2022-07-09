@@ -4,6 +4,7 @@
   "description": "",
   "main": "Index.js",
   "scripts": {
+    "heroku-postbuild":"cd client && npm install --only=dev --no-shrinkwrap && npm run build",
     "start": "node Index.js",
     "devStart": "nodemon Index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
